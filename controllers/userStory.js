@@ -59,7 +59,7 @@ class UserStory {
     parseInvoiceNumbers(req, res, next) {
         getNumber(invoiceList)
             .then(result => {
-                console.log("Invoice Number", result);
+                // console.log("Invoice Number", result);
                 fs.writeFile('output_user_story_1.txt', result, function (err, data) {
                     if (err) {
                         return res.status(200).json({
